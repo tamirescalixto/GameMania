@@ -36,22 +36,11 @@ body {
     height: 52px;
 }
 
-
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #1B264F;
     font-weight: 800;
     font-size: 30px;
-}
-
-.login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: center;
-    padding-top: 58px;
-
 }
 
 .menu-navegacao {
@@ -124,62 +113,79 @@ h1 {
 
 }
 
-.card-login {
-    width: 420px;
-
+.login {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 50px 35px;
+}
 
-    background: #488FAD;
+.login_container {
+    min-height: 300px;
+    width: 400px;
+
+    background-color: #488FAD;
     mix-blend-mode: normal;
     border-radius: 41px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-}
 
-.textfield {
+    box-sizing: border-box;
+    padding: 50px;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    margin: 10px;
+    align-items: center;
 }
 
-.textfield input {
+.login_title {
+    font-family: 'Montserrat', sans-serif;
+    color: #1B264F;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.login_input {
     width: 100%;
     border-radius: 50px;
     border: none;
     outline: none;
     padding: 6px 31px;
+    margin-bottom: 16px;
     box-sizing: border-box;
 
     background: #60A4C1;
     
     font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+    color: #1B264F;
     font-weight: 500;
     font-size: 14px;
 
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.textfield label {
+input::placeholder {
+    color: #3C497A;
+    font-size: 12px;
+
+}
+
+label {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 14px;
-
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
-.textfield input::placeholder {
-    color: rgb(255, 255, 255, 50%);
-}
-
-.btn-entrar {
+.login_submit {
     padding: 8px 100px;
     background-color: #1B264F;
     border: none;
@@ -194,11 +200,26 @@ h1 {
     color: #FFFFFF;
     font-weight: 800;
 
-    margin-top: 30px;
 }
 
-.btn-entrar:hover {
+.login_submit:hover {
     border: 1px solid #1B264F;
     background-color: #FFFFFF;
+    color: #1B264F;
+}
+
+.login_reset {
+    font-family: 'Montserrat', sans-serif;
+    color: #3C497A;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_reset:hover {
     color: #1B264F;
 }
